@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home page</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+	<h2>Login is successfully</h2>
+
+	<button onclick="resetLocaStorage()">Reset Local Storage</button>
+
+	<script>
+		function resetLocaStorage(){
+			// var UserName;
+			localStorage.removeItem("UserName");
+			window.location.href = "login.html";
+			alert("Deleted logged username in Local Storage!");
+		}
+	</script>
+</body>
+</html>
